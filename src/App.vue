@@ -94,25 +94,45 @@ export default {
             enable: false,
           },
 
-
-          series: [  //重点配置区域
+          series: [
+            //重点配置区域
             {
-              type: 'bar3D',
-              name:'河南',
-              coordinateSystem: 'geo3D',
-              
+              type: "bar3D",
+              name: "河南",
+              coordinateSystem: "geo3D",
+
               itemStyle: {
-                color: 'red',
-                opacity: 1
+                color: "red",
+                opacity: 1,
               },
-              emphasis:{
-                label:{
-                  show:true,
-                }
+              emphasis: {
+                label: {
+                  show: true,
+                },
               },
               // data: [],//重点中的重点
-            }
-          ]
+            },
+          ],
+          visualMap: {
+            show: false,
+            min: 0,
+            max: 15,
+            inRange: {
+              color: [
+                "#313695",
+                "#4575b4",
+                "#74add1",
+                "#abd9e9",
+                "#e0f3f8",
+                "#ffffbf",
+                "#fee090",
+                "#fdae61",
+                "#f46d43",
+                "#d73027",
+                "#a50026",
+              ],
+            },
+          },
         },
       };
 
